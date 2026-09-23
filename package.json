@@ -5,7 +5,8 @@
   "scripts": {
     "push": "drizzle-kit push",
     "studio": "drizzle-kit studio",
-    "seed": "tsx seed.ts"
+    "seed": "tsx seed.ts",
+    "data-management": "tsx data-management/index.ts"
   },
   "dependencies": {
     "@neondatabase/serverless": "^0.10.4",
