@@ -1,6 +1,6 @@
 -- ==============================================================================
 -- SMARTMART DBMS: 04_CRUD_OPERATIONS.SQL
--- Member 2: CRUD Operations & Relational Queries (Raw PostgreSQL)
+-- CRUD Operations & Relational Queries (Raw PostgreSQL)
 -- Audited strictly against schema.ts
 -- ==============================================================================
 

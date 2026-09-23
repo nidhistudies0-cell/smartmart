@@ -22,7 +22,7 @@ import {
 
 async function runDataManagementDemo() {
   console.log("==========================================================================");
-  console.log(" 🛒 SMARTMART: INVENTORY & ONLINE SUPERMARKET DBMS DEMO (MEMBER 2)");
+  console.log(" 🛒 SMARTMART: INVENTORY & ONLINE SUPERMARKET DBMS DEMO");
   console.log("==========================================================================");
 
   try {
@@ -138,7 +138,7 @@ async function runDataManagementDemo() {
     await checkLowStock();
 
     console.log("\n==========================================================================");
-    console.log("🎉 MEMBER 2 DATA MANAGEMENT DEMO COMPLETED SUCCESSFULLY!");
+    console.log("🎉 SMARTMART DATA MANAGEMENT DEMO COMPLETED SUCCESSFULLY!");
     console.log("==========================================================================");
   } catch (error) {
     console.error("❌ Error running data management demo:", error);

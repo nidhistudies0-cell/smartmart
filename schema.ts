@@ -223,3 +223,15 @@ export const categoryRelations = relations(category, ({ many }) => ({
 export const supplierRelations = relations(supplier, ({ many }) => ({
   products: many(product),
 }));
+
+export const cartRelations = relations(cart, ({ one }) => ({
+  customer: one(customer, {
+    fields: [cart.customerId],
+    references: [customer.customerId],
+  }),
+  product: one(product, {
+    fields: [cart.productId],
+    references: [product.productId],
+  }),
+}));
+

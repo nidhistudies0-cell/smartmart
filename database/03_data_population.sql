@@ -1,6 +1,6 @@
 -- ==============================================================================
 -- SMARTMART DBMS: 03_DATA_POPULATION.SQL
--- Member 2: Realistic Supermarket Data Population Script (Raw PostgreSQL)
+-- Realistic Supermarket Data Population Script (Raw PostgreSQL)
 -- Audited strictly against schema.ts
 -- ==============================================================================
 

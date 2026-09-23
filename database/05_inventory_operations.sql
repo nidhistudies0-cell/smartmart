@@ -1,6 +1,6 @@
 -- ==============================================================================
 -- SMARTMART DBMS: 05_INVENTORY_OPERATIONS.SQL
--- Member 2: Inventory Management, Stock Reduction, & Low-Stock Alerts (Raw PostgreSQL)
+-- Inventory Management, Stock Reduction, & Low-Stock Alerts (Raw PostgreSQL)
 -- Audited strictly against schema.ts
 -- ==============================================================================
 
