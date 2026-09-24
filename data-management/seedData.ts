@@ -11,6 +11,7 @@ import {
   orderDetails,
   payment,
 } from "../schema";
+import { populateBulkData } from "./seedBulk";
 
 export async function clearAllData() {
   console.log("🧹 Clearing existing SmartMart database data...");
@@ -394,7 +395,7 @@ export async function populateSmartMartData() {
     .returning();
 
   console.log("\n🎉 DATA POPULATION COMPLETE!");
-  console.log(`Summary of inserted records:
+  console.log(`Summary of inserted records (base dataset):
   - Admins: ${insertedAdmins.length}
   - Customers: ${insertedCustomers.length}
   - Categories: ${insertedCategories.length}
@@ -405,6 +406,10 @@ export async function populateSmartMartData() {
   - Orders: ${insertedOrders.length}
   - Order Details: ${insertedOrderDetails.length}
   - Payments: ${insertedPayments.length}`);
+
+  // 11. BULK DEMO DATA (adds on top of the base dataset above; the returned
+  // arrays below stay base-only so index.ts's seed.products[4] etc. still work)
+  await populateBulkData();
 
   return {
     admins: insertedAdmins,
