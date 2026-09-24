@@ -4,7 +4,7 @@ import { db } from "./db";
 import { sql } from "drizzle-orm";
 
 const app = express();
-const PORT = 5000;
+const PORT = Number(process.env.PORT ?? 5001);
 app.use(cors());
 app.use(express.json());
 
